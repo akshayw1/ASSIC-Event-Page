@@ -1,0 +1,281 @@
+body {
+  font-family: sans-serif;
+  color: black;
+}
+
+.mobile-logo{
+  visibility: hidden;
+}
+
+.navbar-nav li {
+  border-right: 1px solid black;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.containe {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  flex-flow: wrap;
+}
+
+.event-details{
+  height: auto;
+  width: 60%;
+
+ 
+}
+
+form {
+  margin: 8% 10% 8% 10%;
+  width: 80%;
+}
+
+.maincontainer{
+  display: flex;
+  flex-direction: row;
+}
+
+input[type=name],
+input[type=tel]{
+  margin: 2% 0;
+  width: 30%;
+  border: 2px solid rgb(185, 184, 184);
+  border-radius: 5px;
+  padding: 15px 18px;
+  box-sizing: border-box;
+}
+
+
+
+.select{
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  width: 30%;
+  padding: 20px 0 20px 10px;
+  margin-right: 39%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  margin: 10px 0;
+  width: 61%;
+  border: 2px solid rgb(185, 184, 184);
+  border-radius: 5px;
+  padding: 15px 18px;
+  box-sizing: border-box;
+}
+
+
+button {
+  border: none;
+  background-color: #030804;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.rgnbtn {
+  border-radius: 5px;
+  width: 61%;
+}
+
+.lgnbtn {
+  border-radius: 5px;
+  width: 61%;
+  background-color: rgb(0, 87, 255);
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.subcontainer {
+  width: 61%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.subcontainer a {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.forgotpsd {
+  text-align: right;
+  float: right;
+}
+
+span.forgotpsd a {
+  color: black;
+  text-decoration: none;
+  color: #000000;
+}
+
+.forgotpsd a:link {
+  text-decoration: none;
+}
+
+.emptydiv {
+  background-color: rgb(84, 136, 255);
+  opacity: 5;
+  min-height: 200px;
+  float: right;
+
+}
+
+.event-list{
+  width: 40%;
+  background-color:#f2f4f5;
+  padding: 10px;
+}
+.event-card{
+  
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 10px;
+  background-color:rgb(255, 255, 255);
+}
+
+.event-card:hover{
+  border:2px solid rgb(65, 195, 255);
+  box-sizing: border-box;
+
+}
+
+#scroll {
+ 
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.event-logo{
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+}
+
+.logo{
+  height: 100%;
+  width: 100%;
+}
+
+.event-head{
+  display: flex;
+}
+
+.event-title{
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.event-title p{
+  font-weight: 400;
+  font-size: 1rem;
+  color:rgb(78, 78, 78);
+}
+
+.tag-sec{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tag{
+  padding: 0.5rem;
+  border: 1px solid rgb(199, 199, 199);
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 5px;
+  font-weight: 400;
+  font-size:12px
+}
+
+.card-bottom{
+  display: flex;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color:rgb(78, 78, 78);
+  margin-left: 10px;
+  
+}
+.sep{
+  padding-left: 10px;
+  margin-right: 10px;
+  border-right:1px solid black;
+  height: 30px;
+}
+.card-apply{
+  padding-right: 10px;
+  
+}
+.day-left{
+  padding-left: 10px;
+}
+
+#event-stat{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tag-sec-detail{
+  display: flex;
+}
+
+/* Media queries for the responsiveness of the page */
+@media screen and (max-width: 992px) {
+  .emptydiv {
+    margin:auto;
+    width: 80%;
+  }
+  .containe{
+    margin-bottom: 10%;
+  }
+  .event-list{
+    width: 100%;
+    background-color:#f2f4f5;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav li {
+    border-right: none;
+  }
+  .emptydiv {
+    margin:auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    width: 20rem;
+  }
+}
