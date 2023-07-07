@@ -22,12 +22,6 @@ body {
   flex-flow: wrap;
 }
 
-.event-details{
-  height: auto;
-  width: 60%;
-
- 
-}
 
 form {
   margin: 8% 10% 8% 10%;
@@ -138,7 +132,7 @@ span.forgotpsd a {
 }
 
 .event-list{
-  width: 40%;
+  
   background-color:#f2f4f5;
   padding: 10px;
 }
@@ -242,6 +236,46 @@ span.forgotpsd a {
   display: flex;
 }
 
+.detailpage{
+  margin-left: 10px;
+}
+
+.detailcard{
+  padding:10px ;
+}
+
+.apply-button{
+  margin: 10px;
+ margin-bottom: 20px;
+
+}
+
+.btn{
+  background: #4e5ed3;
+}
+
+.apply-btn{
+  background: #002079;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  }
+
+.apply-btn:hover{
+    text-decoration: none;
+    color: #f2f4f5;
+    background: #134cc7;
+  }
+
+  .borderr{
+    border:2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
 /* Media queries for the responsiveness of the page */
 @media screen and (max-width: 992px) {
   .emptydiv {
@@ -277,5 +311,135 @@ span.forgotpsd a {
 @media screen and (max-width: 400px) {
   form {
     width: 20rem;
+  }
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  width: auto;
+  
+}
+.flex-item {
+  
+  
+  
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.one{
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+ margin-bottom: 20px;
+ margin-top: 20px;
+ margin-right: 5px;
+ margin-left: 5px;
+}
+
+.requl, .reqli {
+  list-style: none;
+  padding: 0;
+}
+
+
+h1 {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+}
+.sessions {
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+.reqli {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.reqli:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+.reqli:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+.time {
+  color: #2a2839;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 601px) {
+  .time {
+      font-size: 0.9rem;
+ }
+}
+@media screen and (max-width: 600px) {
+  .time {
+      margin-bottom: 0.3rem;
+      font-size: 0.85rem;
+ }
+}
+.req {
+  color: #4f4f4f;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+@media screen and (max-width: 600px) {
+  .req {
+      font-size: 0.9rem;
+ }
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .containe {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    flex-flow: wrap;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .containe {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    flex-flow: wrap;
   }
 }
